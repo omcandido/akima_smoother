@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>akima_smoother</name>
+  <version>0.0.1</version>
+  <description>This package retrieves an interpolated path using the Akima splines. The raw path can be a multi-valued function</description>
+  <maintainer email="omcandido@uvigo.es">Candido</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>roscpp</depend>
+  <depend>nav_msgs</depend>
+  
+  <export>
+  </export>
+</package>
