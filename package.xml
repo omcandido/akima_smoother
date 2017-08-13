@@ -9,7 +9,9 @@
   
   <depend>roscpp</depend>
   <depend>nav_msgs</depend>
-  
+  <depend>tf</depend>
+  <depend>visualization_msgs</depend>
+
   <export>
   </export>
 </package>

@@ -4,6 +4,8 @@ project(akima_smoother)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   nav_msgs
+  tf
+  visualization_msgs
 )
 
 catkin_package(
@@ -12,6 +14,8 @@ catkin_package(
   CATKIN_DEPENDS 
 	roscpp 
 	nav_msgs
+        tf
+        visualization_msgs
 )
 
 SET(CMAKE_CXX_FLAGS "-std=c++11 -O2 -g -Wall ${CMAKE_CXX_FLAGS}")
@@ -28,11 +32,9 @@ add_dependencies(libakima_smoother
         ${catkin_EXPORTED_TARGETS}
         ${${PROJECT_NAME}_EXPORTED_TARGETS}
 )
-
 add_executable(demo
         src/demo.cpp
 )
-
 target_link_libraries(demo
         libakima_smoother
 	${catkin_LIBRARIES}
