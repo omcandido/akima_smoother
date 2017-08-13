@@ -1,2 +1,2 @@
 # akima_smoother
-This package retrieves an interpolated path using the Akima splines. The raw path can be a multi-valued function
+This ROS package retrieves an interpolated path using the Akima spline interpolation approach. The raw path can be a multi-valued function.

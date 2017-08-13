@@ -1,4 +1,4 @@
-#include <libakima_smoother.h>
+#include <lib/libakima_smoother.h>
 
 namespace akima_smoother
 {
